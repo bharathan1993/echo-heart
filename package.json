@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm install --legacy-peer-deps && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "install": "npm install --legacy-peer-deps"
+    "install": "npm install"
   },
   "dependencies": {
     "@radix-ui/react-scroll-area": "^1.2.1",
