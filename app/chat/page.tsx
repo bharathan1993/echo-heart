@@ -2,7 +2,10 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { Button, Card, Input, ScrollArea } from "@/components/ui"
+import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
+import { ScrollArea } from "@/components/ui/scroll-area"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ArrowLeft, Send, Trash2, Heart } from 'lucide-react'
 import { motion, AnimatePresence } from "framer-motion"

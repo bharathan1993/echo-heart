@@ -12,6 +12,13 @@ const nextConfig = {
     optimizeCss: true,
   },
   poweredByHeader: false,
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': __dirname,
+    };
+    return config;
+  },
 };
 
 module.exports = nextConfig;
