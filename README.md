@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Echo Heart - AI Emotional Support Companion
+
+Echo Heart is a compassionate AI companion designed to provide emotional support and meaningful conversations. Built with modern web technologies, it offers a safe and uplifting space where users can share their feelings and receive empathetic responses.
+
+## Features
+
+- 🎯 Real-time chat interface with smooth animations
+- 🎨 Beautiful, responsive design with dark mode support
+- 💬 Empathetic AI responses powered by GPT-4
+- 🔄 Message history management
+- 🌙 Dark/Light theme toggle
+- ⚡ Fast and responsive user experience
+
+## Tech Stack
+
+- **Frontend Framework**: Next.js 14 with App Router
+- **Language**: TypeScript
+- **Styling**: 
+  - Tailwind CSS
+  - Shadcn/ui components
+  - Framer Motion for animations
+- **AI Integration**: OpenAI GPT-4 API
+- **Runtime**: Edge Runtime for optimal performance
+- **State Management**: React Hooks
+- **Development Tools**:
+  - ESLint for code quality
+  - Prettier for code formatting
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+3. Create a `.env` file in the root directory with your OpenAI API key:
+   ```env
+   OPENAI_API_KEY=your_api_key_here
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) with your browser
+
+## Project Structure
+
+```
+echoheart/
+├── app/
+│   ├── api/
+│   │   └── chat/
+│   │       └── route.ts    # Chat API endpoint
+│   ├── chat/
+│   │   └── page.tsx       # Chat interface
+│   └── page.tsx           # Landing page
+├── components/
+│   └── ui/               # Reusable UI components
+├── utils/
+│   └── openai.ts         # OpenAI configuration
+└── public/              # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Key Features Explained
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Chat Interface
+- Real-time message updates
+- Typing indicators
+- Message timestamps
+- Smooth animations for message transitions
+- Responsive design for all screen sizes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### AI Integration
+- Powered by GPT-4 for natural conversations
+- Custom system prompt for emotional support
+- Error handling and retry mechanisms
+- Edge runtime for faster response times
 
-## Learn More
+### User Experience
+- Clean and modern UI design
+- Dark/Light theme support
+- Responsive layout
+- Loading states and animations
+- Error handling with user feedback
 
-To learn more about Next.js, take a look at the following resources:
+## Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Required environment variables:
+- `OPENAI_API_KEY`: Your OpenAI API key
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Feel free to submit issues and enhancement requests!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License - feel free to use this project for your own purposes.
+
+---
+
+Built with ❤️ using Next.js and OpenAI
