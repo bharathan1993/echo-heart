@@ -3,22 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   typescript: {
-    ignoreBuildErrors: true, // Temporarily ignore TS errors during build
+    ignoreBuildErrors: true
   },
   eslint: {
-    ignoreDuringBuilds: true, // Temporarily ignore ESLint errors during build
-  },
-  experimental: {
-    optimizeCss: true,
-  },
-  poweredByHeader: false,
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@': __dirname,
-    };
-    return config;
-  },
-};
+    ignoreDuringBuilds: true
+  }
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
